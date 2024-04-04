@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "install:ui": "cd ./frontend && npm install",
-    "build:ui": "rm -rf dist && cd ./frontend && npm run build && mv dist ../"
+    "build:ui": "rm -rf dist && cd ./frontend && npm install && npm run build && mv dist ../"
   },
   "repository": {
     "type": "git",

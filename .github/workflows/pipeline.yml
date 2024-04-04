@@ -15,9 +15,7 @@ jobs:
           node-version: '20'
       - name: Install backend dependencies
         run: npm install
-      - name: Install frontend dependencies
-        run: npm run install:ui
-      - name: Build Frontend
+      - name: Install & build frontend
         run: npm run build:ui
       #- name: Trigger deployment
       #  run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
